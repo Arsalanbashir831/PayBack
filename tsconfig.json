@@ -13,5 +13,5 @@
     "**/*.tsx",
     ".expo/types/**/*.ts",
     "expo-env.d.ts"
-  ]
+, "hooks/useThemeColor.js", "components/common/CustomTextInputField.jsx", "app/QRscan.jsx", "app/QRscan.jsx", "app/Signup.jsx", "app/(tabs)/CustomerDashboard.jsx", "app/(tabs)/_layout.jsx", "app/(tabs)/explore.jsx", "app/_layout.jsx", "app/index.jsx"  ]
 }

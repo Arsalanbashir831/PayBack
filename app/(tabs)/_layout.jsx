@@ -9,20 +9,27 @@ export default function TabLayout() {
   const colorScheme = useColorScheme();
 
   return (
-    <Tabs
+    <Tabs 
       screenOptions={{
         tabBarActiveTintColor: Colors[colorScheme ?? 'light'].tint,
         headerShown: false,
+        tabBarStyle: {
+          borderTopWidth: 0,  // Remove top border
+          elevation: 0,       // Remove shadow on Android
+          shadowOpacity: 0,   // Remove shadow on iOS
+          backgroundColor: 'white', // Or any color you prefer
+        }
       }}>
       <Tabs.Screen
-        name="index"
+        name="CustomerDashboard"
         options={{
-          title: 'Home',
+          title: 'Dashboard',
           tabBarIcon: ({ color, focused }) => (
             <TabBarIcon name={focused ? 'home' : 'home-outline'} color={color} />
           ),
         }}
       />
+    
       <Tabs.Screen
         name="explore"
         options={{
